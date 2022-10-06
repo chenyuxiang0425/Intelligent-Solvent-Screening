@@ -18,3 +18,4 @@
 
 ## 备注
 - 可在 `models.py` 中自定义模型
+- 可在 `main.py` 中调节 `train_model`、`test_model`、`output_data` 三个布尔变量来控制执行哪些任务

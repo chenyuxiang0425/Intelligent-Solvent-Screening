@@ -89,7 +89,7 @@ def predict_y(model, x_read):
 def output_y_predict(model_name, data_path, feat_cols,output_location):
     """output_y_predict"""
     model = load_model(model_name)
-    data = helper_method.deal_with_rough_data(pd.read_csv(data_path),"./data/selected_full_test_dataset.csv")
+    data = helper_method.deal_with_rough_data(pd.read_csv(data_path),"../data/selected_full_test_dataset.csv")
     feat_cols_values = data[feat_cols].values
     predict_y_nums = predict_y(model, feat_cols_values)
     output = data[['Name','id','symbol']].copy()    # 取三列
