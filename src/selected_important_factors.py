@@ -65,7 +65,7 @@ def do_which_test(data_path, model_type, target_col, other_col):
 
 
 if __name__ == '__main__':
-    MeSH_data_path = './data/MeSH_data_within_names.csv'
+    MeSH_data_path = '../data/MeSH_data_within_names.csv'
 
     print("random_forest_regressor_model:")
     random_forest_regressor_results = do_which_test(data_path = MeSH_data_path, model_type = random_forest_regressor_model, target_col = 'MeSHSolubility',other_col='Name')
